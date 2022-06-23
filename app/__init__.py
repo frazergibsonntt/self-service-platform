@@ -13,7 +13,7 @@ def create_app():
     ensure_plugins()
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_mapping(
-        SECRET_KEY="secret",
+        SECRET_KEY=os.environ.get("PULUMI_KEY"),
         PROJECT_NAME="self-service-platyform",
         PULUMI_ORG=os.environ.get("PULUMI_ORG"),
     )

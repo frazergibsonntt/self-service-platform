@@ -1,5 +1,11 @@
 # Self Service Infrastructure Platyform
 
+Run locally:
+
+```sh
+FLASK_RUN_PORT=1337 FLASK_ENV=development FLASK_APP=app PULUMI_ORG=frazergibsonntt PULUMI_KEY= venv/bin/flask run
+```
+
 This application represents a starting point for how you might develop a self-service infrastructure platform on top of [Pulumi](https://pulumi.com)'s [Automation API](https://www.pulumi.com/blog/automation-api/).
 
 In this case, we've used Python, [Flask](https://flask.palletsprojects.com/en/1.1.x/) and [Jinja](https://jinja.palletsprojects.com/en/2.11.x/) templates to create a web portal that allows users to deploy their own infrastructure.
